@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title></title>
+    <link>http://www.3sixty.me.uk/3SIXTY_Bicycle_Stunt_Team/Home/Home.html</link>
+    <description> </description>
+    <generator>iWeb 3.0.4</generator>
+
+<item>
+<title>Event 1</title>
+<pubDate>Tue, 5 July 2012 12:29:33 +0000</pubDate>
+<guid>zzza1</guid>
+</item>
+
+<item>
+<title>Event 2</title>
+<pubDate>Mon, 4 July 2012 12:29:33 +0000</pubDate>
+<guid>XXXYX5678</guid>
+</item>
+
+<item>
+<title>Event 3</title>
+<pubDate>Sun, 3 July 2012 11:29:33 +0000</pubDate>
+<guid>XXXY1234</guid>
+</item>
+  </channel>
+</rss>
+

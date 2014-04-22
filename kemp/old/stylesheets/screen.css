@@ -1,0 +1,863 @@
+/* /////////////////////////////
+PROJECT: IODE SOFTWARE
+MEDIA TYPE: SCREEN
+CREATED ON: 17.05.2012
+//////////////////////////////*/
+
+
+
+
+/* RESET MOST COMMON DEFAULTS */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: none;
+}
+
+
+/* HTML5 tags - sets display for unknown elements */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'LatoReg';
+  src: url('../fonts/lato-fontfacekit/Lato-Reg-webfont.eot');
+  src: 
+        url('../fonts/lato-fontfacekit/Lato-Reg-webfont.woff') format('woff'),
+ 		url('../fonts/lato-fontfacekit/Lato-Reg-webfont.ttf') format('truetype'), 
+		url('../fonts/lato-fontfacekit/Lato-Reg-webfont.svg#webfontlatoreg') format('svg');
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url('../fonts/lato-fontfacekit/Lato-Lig-webfont.eot');
+  src: 
+        url('../fonts/lato-fontfacekit/Lato-Lig-webfont.woff') format('woff'),
+ 		url('../fonts/lato-fontfacekit/Lato-Lig-webfont.ttf') format('truetype'), 
+		url('../fonts/lato-fontfacekit/Lato-Lig-webfont.svg#webfontlatolig') format('svg');
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url('../fonts/lato-fontfacekit/Lato-Bol-webfont.eot');
+  src: 
+        url('../fonts/lato-fontfacekit/Lato-Bol-webfont.woff') format('woff'),
+ 		url('../fonts/lato-fontfacekit/Lato-Bol-webfont.ttf') format('truetype'), 
+		url('../fonts/lato-fontfacekit/Lato-Bol-webfont.svg#webfontlatobol') format('svg');
+}
+
+
+
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+
+
+#headerWrapper {
+	width: 100%;
+	height: 150px;
+	float: left;
+	text-align: center;	
+	background: #fff;
+}
+
+#headerContent {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;	
+}
+
+#headerContent img {
+	float: left;
+	display: block;	
+	padding: 33px 0px 0px 0px;
+}
+
+#headerContent ul {
+	float: right;
+	list-style: none;	
+	padding: 92px 0px 0px 0px;
+}
+
+#headerContent li {
+	float: left;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: LatoReg, Helvetica, Arial;
+}
+
+#headerContent li a {
+	float: left;
+	background: #ededed;
+	border-left: 1px solid #fff;
+	color: #565656;
+	text-decoration: none;
+	padding: 8px 12px 8px 12px;	
+}
+
+#headerContent li a:hover {
+	background: #ccc;	
+}
+
+#headerContent li.active a {
+	background: #272727;	
+	color: #fff;
+}
+
+#headerContent li.active a:hover {
+	background: #272727;	
+}
+
+
+
+
+#primaryWrapper {
+	width: 100%;
+	float: left;
+	text-align: center;	
+	background: #be1522;
+	padding: 30px 0px 30px 0px;
+}
+
+#primaryContent {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#primaryContent h1 {
+	color: #fff;	
+	font-size: 68px;
+	font-family: LatoLight, Helvetica, Arial;
+	font-weight: normal;
+	line-height: 82px;
+	margin: 0px 0px 30px 0px;
+}
+
+#primaryContent h1 span {
+	font-size: 82px;
+	font-family: LatoReg, Helvetica, Arial;	
+}
+
+#primaryContent img {
+	float: left;
+	display: block;	
+}
+
+a.readMore {
+	float: right;
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 24px;
+	background: #98111b;
+	padding: 18px 30px 18px 30px;	
+	font-family: LatoReg, Helvetica, Arial;
+}
+
+a.readMore:hover {
+	background: #fff;
+	color: #98111b;
+}
+
+
+
+
+
+#secondaryWrapper {
+	width: 100%;
+	float: left;
+	text-align: center;	
+	background: #272727;
+	padding: 40px 0px 50px 0px;
+}
+
+#secondaryContent {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+#secondaryContent h2 {
+	color: #8c8c8c;
+	font-size: 36px;
+	font-family: LatoReg, Helvetica, Arial;
+	margin: 0px 0px 25px 0px;
+	font-weight: normal;
+}
+
+
+#featuredItems {
+	width: 1004px;
+	float: left;
+}
+
+.featuredItem {
+	width: 260px;
+	float: left;
+	margin: 0px 54px 0px 0px;
+	background: #fff;
+	padding: 10px 10px 10px 10px;
+	min-height: 300px;	
+}
+
+.featuredItem img {
+	display: block;
+	margin: 0px 0px 15px 0px;	
+}
+
+.featuredItem h3 {
+	font-size: 22px;
+	color: #be1522;
+	font-weight: normal;
+	font-family: LatoBold, Helvetica, Arial;
+	margin: 0px 0px 5px 0px;	
+}
+
+.featuredItem p {
+	font-size: 16px;
+	color: #272727;
+	line-height: 18px;
+	font-family: LatoReg, Helvetica, Arial;	
+}
+
+
+
+#utilityWrapper {
+	width: 100%;
+	float: left;
+	text-align: center;	
+	background: #e9e9e9;
+	padding: 40px 0px 30px 0px;
+}
+
+#utilityContent {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;	
+}
+
+#utilityContent h4 {
+	font-size: 36px;
+	color: #be1522;
+	font-family: LatoReg, Helvetica, Arial;	
+	margin: 0px 0px 20px 0px;
+	font-weight: normal;
+}
+
+
+.utilityNav {
+	width: 190px;
+	float: left;	
+}
+
+.utilityNav ul {
+	list-style: none;
+	font-family: LatoReg, Helvetica, Arial;	
+}
+
+.utilityNav li {
+	font-size: 18px;
+	color: #272727;
+	line-height: 24px;
+}
+
+.utilityNav li a {
+	color: #272727;	
+	text-decoration: none;
+}
+
+.utilityNav li a:hover {
+	color: #be1522;	
+}
+
+.utilityContact {
+	width: 250px;
+	float: left;	
+}
+
+.utilityContact p {
+	font-size: 18px;
+	color: #272727;
+	line-height: 26px;
+	font-family: LatoReg, Helvetica, Arial;
+}
+
+.utilityContact p span {
+	color: #be1522;	
+	font-size: 14px;	
+}
+
+.utilityContact a {
+	color: #272727;	
+	text-decoration: none;	
+}
+
+.utilityContact a:hover {
+	color: #be1522;	
+}
+
+
+.utilityTwitter {
+	width: 510px;
+	float: left;	
+}
+
+.utilityTwitter h4 {
+	float: left;
+	position: relative;	
+}
+
+.utilityTwitter h4 img {
+	position: absolute;	
+	right: -40px;
+	top: -10px;
+}
+
+.twitterFollow {
+	float: right;
+	font-size: 18px;
+	font-family: LatoReg, Helvetica, Arial;	
+	line-height: 18px;
+}
+
+.twitterFollow a {
+	float: left;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px 8px 15px;
+	background: #8f8f8f;	
+}
+
+.twitterFollow a:hover {
+	background: #be1522;	
+}
+
+.twitterFeed {
+	width: 510px;
+	float: left;	
+}
+
+.twitterFeed ul {
+	font-family: LatoReg, Helvetica, Arial;
+	font-size: 16px;
+	color: #272729;
+	list-style: none;	
+}
+
+.twitterFeed li {
+	margin: 0px 0px 20px 0px;
+	line-height: 20px;	
+}
+
+.twitterFeed li a {
+	color: #be1522;	
+	text-decoration: none;
+}
+
+.twitterFeed li a:hover {
+	color: #272729;	
+}
+
+
+#footerWrapper {
+	width: 100%;
+	float: left;
+	text-align: center;	
+	background: #fff;
+	padding: 20px 0px 20px 0px;
+}
+
+#footerContent {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;	
+}
+
+#footerContent p {
+	font-size: 14px;
+	color: #7b7b7b;
+	line-height: 18px;
+	font-family: LatoReg, Helvetica, Arial;	
+}
+
+
+.contentCols {
+	width: 950px;
+	float: left;
+	font-family: LatoLight, Helvetica, Arial;
+	color: #fff;	
+}
+
+.contentCols h2 {
+	font-size: 24px;
+	line-height: 28px;
+	font-family: LatoBold, Helvetica, Arial;
+	margin: 0px 0px 10px 0px;
+	font-weight: normal;
+}
+
+.contentCols p {
+	font-size: 22px;
+	line-height: 28px;
+	margin: 0px 0px 20px 0px;	
+}
+
+.contentCols li {
+	font-size: 16px;
+	line-height: 28px;
+	margin: 0px 0px 20px 0px;	
+}
+
+.contentColLeft {
+	width: 440px;
+	float: left;	
+}
+
+.contentColRight {
+	width: 440px;
+	float: right;	
+}
+
+.contentColRight img {
+	display: block;
+	float: left;
+	margin: 0px 0px 22px 0px;	
+}
+
+
+
+#team {
+	width: 900px;
+	float: left;
+	padding: 20px 0px 0px 0px;
+	margin-bottom: -30px;
+}
+
+.teamMember {
+	width: 400px;
+	float: left;
+	padding: 0px 20px 30px 0px;	
+	color: #fff;
+	font-family: LatoLight, Helvetica, Arial;
+}
+
+.teamMember img {
+	float: left;
+	display: block;
+	border: 5px solid #fff;	
+	margin: 0px 15px 0px 0px;
+}
+
+.teamMember p {
+	font-size: 22px;
+	padding: 20px 0px 0px 0px;
+}
+
+.teamMember p em {
+	font-size: 16px;
+	color: #EC2727;
+	font-family: LatoReg, Helvetica, Arial;
+	font-style: normal;
+}
+
+
+
+#additional {
+	width: 1020px;
+	float: left;
+	color: #fff;
+}
+
+#additional h3 {
+	font-size: 22px;
+	line-height: 24px;
+	font-family: LatoReg, Helvetica, Arial;
+	margin: 0px 0px 10px 0px;
+	font-weight: normal;
+	color: #8c8c8c;	
+}
+
+#additional p {
+	font-family: LatoLight, Helvetica, Arial;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0px 0px 10px 0px;
+}
+
+.additionalService {
+	width: 270px;
+	float: left;
+	padding: 0px 70px 0px 0px;	
+	color: #fff;
+	font-family: LatoLight, Helvetica, Arial;
+}
+
+
+
+.contactDetails {
+	width: 300px;
+	float: right;
+	color: #fff;	
+}
+
+.contactDetails h3 {
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0px 0px 25px 0px;
+	font-family: LatoReg, Helvetica, Arial;	
+}
+
+.contactDetails p {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0px 0px 10px 0px;
+	font-family: LatoLight, Helvetica, Arial;	
+}
+
+.contactDetails p span {
+	font-size: 18px;
+	font-family: LatoReg, Helvetica, Arial;	
+}
+
+.contactDetails a {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.contactDetails a:hover {
+	color: #272727;
+}
+
+
+.contactForm {
+	width: 510px;
+	float: left;
+	color: #fff;	
+}
+
+.contactForm h2 {
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0px 0px 25px 0px;
+	font-family: LatoReg, Helvetica, Arial;
+}
+
+.contactForm table {
+	border-collapse: collapse;
+	border: 0px;
+	width: 510px;
+	float: left;
+	font-family: LatoLight, Helvetica, Arial;
+}
+
+.contactForm td {
+	padding: 0px 0px 25px 0px;
+	vertical-align: top;	
+}
+
+td.tdLabel {
+	width: 160px;	
+}
+
+.contactForm label {
+	font-size: 18px;
+	float: left;	
+	padding: 8px 0px 0px 0px;
+}
+
+.contactForm input {
+	width: 330px;
+	background: #fff;
+	border: 0px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.contactForm textarea {
+	width: 330px;
+	height: 80px;
+	background: #fff;
+	border: 0px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#inputSubmit {
+	width: auto;
+	background: #98111b;
+	color: #fff;
+	float: right;
+	font-size: 22px;
+	font-family: LatoReg, Helvetica, Arial;
+	padding: 10px 20px 10px 20px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#inputSubmit:hover {
+	background: #fff;
+	color: #98111b;
+}
+
+.contactForm p {
+	font-size: 18px;
+	font-family: LatoLight, Helvetica, Arial;	
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE ELEMENTS */
+
+@media only screen and (max-device-width: 640px) {
+
+
+#headerWrapper {
+	width: 640px;
+	height: auto;
+}
+#headerContent {
+	width: 640px;	
+	overflow: hidden;
+}
+#headerContent img {
+	padding-left: 20px;	
+}
+#headerContent ul {
+	clear: both;
+	width: 600px;	
+	float: left;
+	padding: 20px 0px 20px 20px;
+}
+#headerContent li {
+	font-size: 30px;	
+}
+#headerContent li a {
+	padding: 16px 20px 16px 20px;	
+}
+
+
+#primaryWrapper {
+	width: 640px;
+}
+#primaryContent {
+	width: 600px;
+	padding: 0px 20px 0px 20px;
+	overflow: hidden;	
+}
+#primaryContent h1 {
+	font-size: 50px;
+	line-height: 58px;
+}
+#primaryContent h1 span {
+	font-size: 56px;
+}
+
+#secondaryWrapper {
+	width: 640px;
+}
+#secondaryContent {
+	width: 600px;
+	padding: 0px 20px 0px 20px;
+	overflow: hidden;
+}
+#featuredItems {
+	width: 600px;
+}
+
+.featuredItem {
+	width: 580px;
+	float: left;
+	margin: 0px 0px 20px 0px;
+	background: #fff;
+	padding: 10px 10px 10px 10px;
+	min-height: 0px;	
+}
+
+.featuredItem img {
+	display: block;
+	margin: 0px 10px 0px 0px;
+	float: left;	
+}
+.featuredItem h3 {
+	font-size: 28px;
+	margin: 0px 0px 5px 0px;	
+}
+
+.featuredItem p {
+	font-size: 15px;
+	line-height: 18px;
+}
+
+
+#utilityWrapper {
+	width: 640px;
+}
+#utilityContent {
+	width: 600px;
+	padding: 0px 20px 0px 20px;
+	overflow: hidden;	
+	overflow: hidden;
+}
+#utilityContent h4 {
+	margin: 0px 0px 10px 0px;	
+}
+.utilityNav {
+	width: 600px;	
+}
+.utilityNav li {
+	display: inline;
+	padding: 0px 20px 0px 0px;
+}
+.utilityTwitter {
+	width: 600px;
+	padding: 40px 0px 0px 0px;	
+}
+.twitterFeed {
+	width: 600px;	
+}
+.twitterFeed ul {
+	font-size: 14px;	
+}
+.twitterFollow {
+	font-size: 22px;	
+}
+.utilityContact {
+	width: 600px;
+	padding: 30px 0px 0px 0px;		
+}
+
+.contentCols {
+	width: 600px;	
+}
+.contentColLeft {
+	width: 600px;	
+}
+.contentColRight {
+	width: 600px;	
+}
+.contentColRight img {
+	width: 600px;
+	height: auto;
+}
+
+#team {
+	width: 600px;	
+	margin-bottom: -20px;
+}
+
+.teamMember {
+	width: 600px;
+	padding: 0px;
+	margin: 0px 0px 20px 0px;	
+}
+.teamMember p {
+	font-size: 36px;	
+}
+
+#additional {
+	width: 600px;	
+}
+#additional h3 {
+	font-size: 28px;	
+}
+#additional p {
+	font-size: 16px;	
+}
+.additionalService {
+	width: 600px;
+	margin: 0px 0px 20px 0px;	
+}
+.contactForm {
+	display: none;	
+}
+.contactDetails {
+	width: 600px;
+	float: left;	
+}
+.contactDetails p {
+	font-size: 44px;	
+	margin: 0px 0px 20px 0px;
+}
+
+#footerWrapper {
+	width: 640px;
+}
+#footerContent {
+	width: 640px;	
+	overflow: hidden;
+}
+#footerContent p {
+	float: left;
+	padding: 0px 20px 0px 20px;
+	font-size: 12px;
+	line-height: 14px;	
+}
+
+		
+}
+
+
+
+.contentCols a {
+	color: #fff;
+}
+
+.contentCols a:hover {
+	background: #FF0000;	
+}
+
+
+
+
+
+
+
+
+/* GENERIC STYLES */
+
+.access {
+	display: none;
+}
+
+.error {
+	color: #fff;
+	background: #272727;
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	float: left;
+	margin: 5px 0px 0px 0px;
+	height: auto;
+}

@@ -1,0 +1,300 @@
+/* /////////////////////////////
+PROJECT: OPENLOOPZ
+MEDIA TYPE: SCREEN
+CREATED ON: 03.07.2012
+//////////////////////////////*/
+
+
+
+
+/* RESET MOST COMMON DEFAULTS */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: none;
+}
+
+
+/* HTML5 tags - sets display for unknown elements */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'LatoReg';
+  src: url('../fonts/lato-fontfacekit/Lato-Reg-webfont.eot');
+  src: 
+        url('../fonts/lato-fontfacekit/Lato-Reg-webfont.woff') format('woff'),
+ 		url('../fonts/lato-fontfacekit/Lato-Reg-webfont.ttf') format('truetype'), 
+		url('../fonts/lato-fontfacekit/Lato-Reg-webfont.svg#webfontlatoreg') format('svg');
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url('../fonts/lato-fontfacekit/Lato-Lig-webfont.eot');
+  src: 
+        url('../fonts/lato-fontfacekit/Lato-Lig-webfont.woff') format('woff'),
+ 		url('../fonts/lato-fontfacekit/Lato-Lig-webfont.ttf') format('truetype'), 
+		url('../fonts/lato-fontfacekit/Lato-Lig-webfont.svg#webfontlatolig') format('svg');
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url('../fonts/lato-fontfacekit/Lato-Bol-webfont.eot');
+  src: 
+        url('../fonts/lato-fontfacekit/Lato-Bol-webfont.woff') format('woff'),
+ 		url('../fonts/lato-fontfacekit/Lato-Bol-webfont.ttf') format('truetype'), 
+		url('../fonts/lato-fontfacekit/Lato-Bol-webfont.svg#webfontlatobol') format('svg');
+}
+
+
+
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: small;
+	text-align: center;
+	background: url(../images/background-body.gif) repeat;
+}
+
+
+
+#pageWrapper {
+	width: 820px;
+	margin: 0 auto;
+	text-align: left;	
+}
+
+
+#header {
+	width: 820px;
+	float: left;
+	border-bottom: 1px solid #cacaca;
+	margin: 0px 0px 30px 0px;	
+}
+
+.headerLeft {
+	width: 410px;
+	float: left;	
+}
+
+.headerLeft h3 {
+	font-family: LatoBold;
+	font-size: 24px;
+	color: #fff;
+	background: #be1522;
+	padding: 10px 20px 10px 20px;
+	float: left;
+	margin: 0px 0px 65px 0px;	
+	font-weight: normal;
+}
+
+.headerLeft h3 a:link, h3 a:visited {
+color: #fff;
+	text-decoration: none;
+}
+
+.headerLeft h3 a:hover {
+	color: #000;
+}
+
+
+.headerLeft h4 {
+	font-family: LatoBold;
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+	float: left;
+	margin: 5px 0px 65px 0px;	
+	font-weight: normal;
+}
+
+.headerLeft h4 a:link, h4 a:visited {
+	text-decoration: none;
+	color: #be1522;
+}
+
+.headerLeft h4 a:hover {
+	color: #000;
+}
+
+
+.headerLeft h1 {
+	width: 410px;
+	float: left;
+	height: 65px;
+	text-indent: -999999px;
+	background: url(../images/openloopz-logo.png) no-repeat top left;
+	margin: 0px 0px 45px 0px;
+}
+
+.headerLeft h2 {
+	font-family: LatoReg;
+	font-size: 50px;
+	font-weight: bold;
+	color: #3c3c3b;
+	margin: 60px 0px 20px 0px;
+	font-weight: normal;	
+	width: 300px;
+	float: left;
+}
+
+.headerLeft p {
+	width: 410px;
+	float: left;	
+}
+
+.share {
+	width: 410px;
+	float: left;
+	padding: 48px 0px 0px 0px;	
+}
+
+.headerRight {
+	width: 410px;
+	float: right;	
+}
+
+#features {
+	width: 820px;
+	float: left;
+	margin: 0px 0px 30px 0px;
+	border-bottom: 1px solid #cacaca;
+	overflow: hidden;	
+}
+
+#features h2 {
+	font-family: LatoLight;
+	font-size: 46px;
+	color: #3c3c3b;
+	margin: 0px 0px 20px 0px;
+	font-weight: normal;	
+}
+
+
+.featuresContent {
+	width: 870px;
+	float: left;	
+}
+
+.featureItem {
+	width: 350px;
+	float: left;
+	margin: 0px 50px 20px 0px;
+	min-height: 160px;
+}
+
+.featureItem h4 {
+	font-family: LatoLight;
+	font-size: 28px;
+	color: #be1522;
+	margin: 0px 0px 5px 0px;
+	font-weight: normal;	
+}
+
+.featureItem p {
+	color: #3c3c3b;
+	font-size: 15px;
+	margin: 0px 0px 10px 0px;
+	line-height: 20px;	
+}
+
+
+
+#quotes {
+	width: 820px;
+	float: left;
+	margin: 0px 0px 30px 0px;	
+}
+
+#quotes h2 {
+	font-family: LatoLight;
+	font-size: 46px;
+	color: #3c3c3b;
+	margin: 0px 0px 20px 0px;
+	font-weight: normal;	
+}
+
+#quotes p {
+	color: #be1522;
+	font-size: 20px;
+	line-height: 28px;
+	font-style: italic;
+	margin: 0px 0px 20px 0px;	
+}
+
+
+
+
+
+#footerWrapper {
+	width: 100%;
+	float: left;
+	background: #000;
+	text-align: center;	
+}
+
+#footerContent {
+	width: 820px;
+	margin: 0 auto;
+	text-align: left;
+	color: #fff;	
+}
+
+.footerLeft {
+	width: 410px;
+	float: left;
+	padding: 90px 0px 0px 0px;	
+}
+
+.footerLeft p {
+	font-size: 12px;
+	float: left;
+	padding: 0px 40px 0px 0px;
+	color: #949494;	
+}
+
+.footerLeft a {
+	color: #949494;
+	text-decoration: underline;
+}
+
+.footerLeft a:hover {
+	text-decoration: none;
+}
+
+.footerRight {
+	width: 410px;
+	float: right;
+	text-align: right;	
+}
+
+
+
+
+
+/* GENERIC STYLES */
+
+.access {
+	display: none;
+}
+
+.error {
+	color: #fff;
+	background: #272727;
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	float: left;
+	margin: 5px 0px 0px 0px;
+	height: auto;
+}
